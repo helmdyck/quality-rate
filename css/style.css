@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.container {
+    background-color:#171e28;
+    background: linear-gradient(#242b35, #171e28);
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    height: 310px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(217, 12%, 63%);
+    line-height: 20px;
+}
+
+.star {
+    background-color:hsl(213, 18%, 25%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.rating-bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(213, 18%, 25%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color:hsl(217, 12%, 63%);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.rating-bubble:active {
+    background-color:hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.rating-bubble:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.thanks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tkn_image {
+    width: 150px;
+    margin-top: 5px;
+}
+
+#tkn_rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 25px 0;
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    color: hsl(25, 97%, 53%);
+    background-color:hsl(213, 18%, 25%);
+    line-height:normal;
+}
+
+.tkn_phrase {
+    text-align: center;
+}
+
+#tkn_title {
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+@media (min-width: 1440px) {
+   .container {
+    width: 310px;
+   }
+}
